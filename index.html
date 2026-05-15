@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI 产业图景研究</title>
+    <meta
+      name="description"
+      content="AI 产业链完整图景：能源、电网、数据中心、半导体、云、模型、数据平台、应用与治理。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar" aria-label="页面导航">
+      <a class="brand" href="#overview" aria-label="回到概览">
+        <span class="brand-mark"></span>
+        <span>AI 产业图景</span>
+      </a>
+      <nav class="nav-links" aria-label="主要章节">
+        <a href="#map">产业地图</a>
+        <a href="#companies">公司图谱</a>
+        <a href="#moats">壁垒总结</a>
+        <a href="#sources">资料来源</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="overview" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">2026-05-15 调研版</p>
+          <h1>从电力到应用，拆解 AI 的完整产业链</h1>
+          <p class="lead">
+            AI 不是单一软件赛道，而是由电力、数据中心、半导体、云、模型、数据平台和应用共同构成的复合产业系统。
+          </p>
+          <div class="hero-actions" aria-label="快速跳转">
+            <a class="primary-action" href="#companies">查看公司与壁垒</a>
+            <a class="secondary-action" href="./ai_industry_landscape_report_2026.md">打开原始报告</a>
+          </div>
+        </div>
+
+        <aside class="signal-board" aria-label="关键判断">
+          <div class="signal-card urgent">
+            <span class="signal-kicker">第一约束</span>
+            <strong>电力与并网</strong>
+            <p>数据中心用电高度集中，局部电网压力比全球占比更关键。</p>
+          </div>
+          <div class="signal-card">
+            <span class="signal-kicker">硬件利润池</span>
+            <strong>GPU + HBM + CoWoS</strong>
+            <p>稀缺产能和系统生态共同决定议价能力。</p>
+          </div>
+          <div class="signal-card">
+            <span class="signal-kicker">软件变现</span>
+            <strong>工作流入口</strong>
+            <p>SaaS 胜负取决于私有数据、权限和业务流程嵌入。</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section metric-strip" aria-label="关键数据">
+        <div class="metric">
+          <span>美国数据中心新增用电</span>
+          <strong>+240 TWh</strong>
+          <small>IEA 对 2024-2030 年的基准情景估计</small>
+        </div>
+        <div class="metric">
+          <span>全球云基础设施支出</span>
+          <strong>$90.9B</strong>
+          <small>Omdia/Canalys 估计 2025 Q1，同比增长 21%</small>
+        </div>
+        <div class="metric">
+          <span>NVIDIA 数据中心收入</span>
+          <strong>$193.7B</strong>
+          <small>FY2026 全年数据中心收入</small>
+        </div>
+        <div class="metric">
+          <span>AWS 2026 资本开支计划</span>
+          <strong>~$200B</strong>
+          <small>Amazon 2025 Q4 财报披露口径</small>
+        </div>
+      </section>
+
+      <section id="map" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Industry Stack</p>
+          <h2>更科学的八层产业分类</h2>
+          <p>
+            AI 产业链需要把电力、液冷、先进封装、网络互连、模型治理这些瓶颈纳入同一张图，而不是只看芯片和应用。
+          </p>
+        </div>
+        <div class="stack-map" id="stackMap" aria-label="AI 产业层级地图"></div>
+      </section>
+
+      <section class="section insight-section">
+        <div class="section-heading">
+          <p class="eyebrow">Core Thesis</p>
+          <h2>四个结构性判断</h2>
+        </div>
+        <div class="insight-grid">
+          <article>
+            <span>01</span>
+            <h3>电力成为 AI 的第一约束</h3>
+            <p>GPU 短缺可以通过供应链扩产缓解，但并网、电源建设和区域输配电能力往往需要更长周期。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>资本开支升级为 AI 工厂</h3>
+            <p>云厂商投入的不只是芯片，而是一整套供电、冷却、机架、网络、存储和调度系统。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>硬件壁垒来自系统组合</h3>
+            <p>CUDA、HBM、CoWoS、NVLink、EUV 和良率共同决定高端硬件的真实竞争力。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>应用层回归工作流</h3>
+            <p>企业买单的是可控、可审计、能接入私有数据和权限体系的业务结果，而不是单次生成能力。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="companies" class="section companies-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Company Atlas</p>
+            <h2>代表公司、股票代码、业务与壁垒</h2>
+          </div>
+          <div class="toolbar" role="search">
+            <label class="search-box">
+              <span>搜索</span>
+              <input id="companySearch" type="search" placeholder="公司、代码、业务或壁垒" />
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-tabs" id="filterTabs" aria-label="公司层级筛选"></div>
+        <div class="company-count" id="companyCount" aria-live="polite"></div>
+        <div class="company-grid" id="companyGrid"></div>
+      </section>
+
+      <section id="moats" class="section moats-section">
+        <div class="section-heading">
+          <p class="eyebrow">Moats & Risks</p>
+          <h2>各层级壁垒与脆弱点</h2>
+        </div>
+        <div class="moat-table" id="moatTable"></div>
+      </section>
+
+      <section class="section variables-section">
+        <div class="section-heading">
+          <p class="eyebrow">Watch List</p>
+          <h2>未来 3-5 年关键变量</h2>
+        </div>
+        <ol class="variable-list">
+          <li><strong>推理需求能否兑现资本开支：</strong>训练是阶段性需求，推理和 Agent 才是长期用量来源。</li>
+          <li><strong>电力和并网是否比 GPU 更硬：</strong>美国、中国、欧洲和日本都受区域电网约束影响。</li>
+          <li><strong>NVIDIA 生态是否被 ASIC 分流：</strong>TPU、Trainium、Maia、Broadcom 和 Marvell 会在特定场景分走需求。</li>
+          <li><strong>HBM 与先进封装供需：</strong>HBM4、CoWoS、SoIC 和 2.5D/3D 封装决定下一代芯片交付节奏。</li>
+          <li><strong>企业 AI 是否进入生产系统：</strong>关注 AI ARR、Agent 使用量、客户扩展和毛利率变化。</li>
+          <li><strong>监管、版权和数据权属：</strong>训练数据、内容授权、AI 爬虫、隐私和行业监管会重塑商业模式。</li>
+        </ol>
+      </section>
+
+      <section id="sources" class="section sources-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Sources</p>
+            <h2>主要资料来源</h2>
+          </div>
+          <a class="secondary-action compact" href="./ai_industry_landscape_report_2026.md">查看 Markdown 报告</a>
+        </div>
+        <div class="source-grid" id="sourceGrid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>公开资料研究整理。股票代码仅用于识别公司，不构成投资建议。</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
